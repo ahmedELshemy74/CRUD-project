@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- Render all elements normally -->
+    <link rel="stylesheet" href="css/normalize.css" />
+    <!-- fonts awesome -->
+    <link rel="stylesheet" href="css/all.min.css" />
+    <!-- bootstrap css library -->
+    <link rel="stylesheet" href="css/bootstrap.min.css" />
+    <!-- main stylesheet -->
+    <link rel="stylesheet" href="css/main.css" />
+    <title>workshop</title>
+  </head>
+  <body>
+    <div class="w-50 m-auto my-3 rounded shadow-lg p-3">
+      <input
+        id="productName"
+        type="text"
+        class="form-control my-2"
+        placeholder="Enter your Product Name..."
+      />
+      <input
+        id="productCategory"
+        type="text"
+        class="form-control my-2"
+        placeholder="Enter your Category Name..."
+      />
+      <input
+        id="productPrice"
+        type="text"
+        class="form-control my-2"
+        placeholder="Enter your Price..."
+      />
+      <textarea
+        id="productDescription"
+        class="form-control my-2"
+        placeholder="Enter your description"
+      ></textarea>
+      <input id="productImg" type="file" class="form-control my-2" />
+      <button id="addBtn" onclick="addProduct()" class="btn btn-primary">
+        Add Product
+      </button>
+      <button id="updateBtn" onclick="updateProduct()" class="btn btn-success">
+        Update Product
+      </button>
+    </div>
+
+    <div class="container">
+      <input
+        onkeyup="search(this.value)"
+        type="search"
+        placeholder="search"
+        class="form-control w-50 m-auto my-4"
+        id="search"
+      />
+      <div class="row gy-3" id="demo">
+      </div>
+    </div>
+
+    <script src="js/bootstrap.bundle.min.js"></script>
+    <script src="js/main.js"></script>
+  </body>
+</html>
